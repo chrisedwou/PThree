@@ -1,0 +1,42 @@
+{% extends 'bootstrap/base.html' %}
+{% block head%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+{% block body%}
+    <div class="mainBody">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-lg">
+                <div class="gameBoard">
+                    <table class="gameTable">
+                        <tr>
+                            <h1>Pick 3</h1>
+                        </tr>
+                        <tr>
+                            <td><input type="image" src="/static/images/fast_food/0.jpg" alt="" class="gameImg" id="a"></td>
+                            <td><input type="image" src="/static/images/fast_food/1.jpg" alt="" class="gameImg" id="b"></td>
+                            <td><input type="image" src="/static/images/fast_food/2.jpg" alt="" class="gameImg" id="c"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="image" src="/static/images/fast_food/3.jpg" alt="" class="gameImg" id="d"></td>
+                            <td><input type="image" src="/static/images/fast_food/4.jpg" alt="" class="gameImg" id="e"></td>
+                            <td><input type="image" src="/static/images/fast_food/5.jpg" alt="" class="gameImg" id="f"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="image" src="/static/images/fast_food/6.jpg" alt="" class="gameImg" id="g"></td>
+                            <td><input type="image" src="/static/images/fast_food/7.jpg" alt="" class="gameImg" id="h"></td>
+                            <td><input type="image" src="/static/images/fast_food/8.jpg" alt="" class="gameImg" id="i"></td>
+                        </tr>
+                    </table>
+                    <input type="submit" id="endTurn">
+                </div>
+
+            </div>
+            <div class="col-sm">
+
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
